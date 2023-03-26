@@ -1,0 +1,396 @@
+/* ---------- FONTS ---------- */
+@import url('/fonts/forte.otf');
+
+* {
+    font-family: 'Lato', Roboto, sans-serif;
+}
+
+h2 {
+    margin-bottom:20px;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn-primary {
+    background-color: #c14abe;
+    padding: .7rem 1.5rem;
+    border-radius: 3px;
+    border: 2px #c14abe solid;
+    color: #fffcff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #fffcff;
+    border: 2px #c14abe solid;
+    color: #c14abe;
+}
+
+.btn-inverted {
+    background-color:white;
+    border: 2px #c14abe;
+    color: #c14abe;
+    border-radius: 3px;
+    padding: .7rem 1.5rem;
+}
+
+.btn-inverted:hover, .btn-inverted:focus {
+    background-color: #c14abe;
+    color: white;
+}
+
+.btn-inverted-orange {
+    background-color: white;
+    border: 2px solid rgba(247, 156, 55, 1);
+    padding: .7rem 1.5rem;
+    color: rgba(247, 156, 55, 1);
+    font-weight: bolder;
+}
+
+.btn-inverted-orange:hover, .btn-inverted-orange:focus {
+    background-color: rgba(247, 156, 55, 1);
+    color: white;
+}
+
+/* ---------- Structure ---------- */
+
+.section {
+    padding: 50px 0;
+}
+
+.section .section {
+    padding: 30px 0;
+}
+
+/* ---------- JUMBOTRON ---------- */
+
+.jumbotron {
+    background-color:rgba(16, 31, 60, 1);
+    margin-bottom: 0;
+    color:white;
+}
+
+/* ---------- NAVBAR ---------- */
+.nav-container{
+    background-color: #fffcff;
+    border-bottom: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar{
+    justify-self: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: #c14abe;
+    font-family: 'Forte', sans-serif;
+    font-size: 65px;
+}
+
+.navbar-brand:hover{
+    color: #c14abe;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:hover {
+    color: #c14abe;
+}
+
+.navbar .navbar-nav .nav-link:active {
+    color: #c14abe;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 0;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+p a {
+    color: #c14abe;
+}
+
+p a:hover, p a:focus {
+    color: #c14abe;
+}
+
+.grey-bg {
+    background-color:#F9F7F4;
+}
+
+.orange-bg {
+    background-color: rgba(247, 156, 55, .8);
+    color: white;
+}
+
+/* ---------- BLOG on Homepage ---------- */
+
+.blog-promoImage {
+    width:100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom:20px;
+    border-radius: 3px; 
+}
+
+.box-blog {
+    padding-top: 50px;
+    height:500px;
+}
+
+.box-blog .blog-meta {
+    font-style: italic;
+    color: rgba(0, 0, 0, .7);
+    font-size: 13px;
+}
+
+.blog-box-btn {
+    margin-bottom:10px;
+}
+
+@media (max-width: 992px) {
+    .box-blog {
+        height:600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-blog {
+        height:450px;
+    }
+}
+
+/* ---------- ContactPage ---------- */
+
+.col-md-6.details{
+    padding-right: 90px;
+}
+
+.col-md-6 h3{
+    color: #c14abe;
+    margin-bottom: 20px;
+}
+
+.sidebar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-links li {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.sidebar-links h4 {
+    margin-bottom: 20px;
+}
+
+.sidebar-links li a {
+    color: #c14abe;
+}
+
+.sidebar-links li a:hover, .sidebar-links li a:focus {
+    color: #c14abe;
+    text-decoration: none;
+}
+/* ---------- BLOG ---------- */
+
+a.featured-link {
+    color: #212529
+}
+
+a.featured-link:hover, a.featured-link:focus {
+    text-decoration: none;
+}
+
+.featured-blog .image-box {
+    width:100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom:20px;
+    border-radius: 3px; 
+}
+
+.thumbnail-blog {
+    padding-bottom: 5px;
+    border-bottom: rgba(53, 68, 177, 1) solid 2px;
+    margin-bottom: 35px;
+    transition: ease .5s;
+}
+
+.thumbnail-blog h5 {
+    font-weight: 700;
+}
+
+.thumbnail-blog .thumbnail-img {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    transition: ease .5s;
+}
+
+a.featured-link:hover .thumbnail-blog {
+    border-bottom: #f79c37 solid 2px;
+}
+
+a.featured-link:hover .thumbnail-blog .thumbnail-img {
+    opacity: .6;
+}
+
+/* ---------- BLOGPOST ---------- */
+
+.intro {
+    font-size: 125%;
+    color: rgba(16, 31, 60, 1);
+    margin-bottom: 30px;
+    border-bottom:  #f79c37 solid 2px;
+}
+
+.meta-author.p-3 {
+    padding: 0 !important;
+}
+
+.meta-meta a {
+    color:#3544b1;
+}
+
+.meta-meta a:hover, .meta-meta a:focus {
+    color: rgba(53, 68, 177, 0.8);
+    text-decoration: none;
+}
+
+.blog-related {
+    color:rgba(16, 31, 60, 1);
+}
+
+.blog-related h4 {
+    text-decoration: underline;
+}
+
+.blog-related a {
+    color:rgba(16, 31, 60, 1);
+}
+
+.blog-related a:hover, .blog-related a:focus {
+    color:black;
+    text-decoration: none;
+}
+
+/* ---------- CONTENTPAGE 2 ---------- */
+
+div.teammember {
+    line-height: 32px;
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    background-color: #261f26;
+    color: #fffcff;
+    width: 100%;
+}
+
+.footer-section{
+    padding: 50px 0;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+}
+
+ul.footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.footer-links li {
+    line-height: 32px;
+}
+
+ul.footer-links li a {
+    text-decoration: none;
+    color: #fffcff;
+}
+
+ul.footer-links li a:hover, ul.footer-links li a:focus {
+    text-decoration: none;
+    color: #c14abe;
+}
+
+.footer img {
+    width:30%;
+}
+
+.footer-copyright{
+    padding: 0 15px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+	flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .footer-copyright-left, .footer-copyright-right{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .impressum, .location{
+    font-size: 13px;
+    color: #fffcff;
+    margin: 0 0 0 5px;
+  }
+
+  .location{
+    text-decoration: none;
+    color: #c14abe;
+  }
+
+  .impressum:hover, .location:hover {
+    color: #c14abe;
+    font-size: 13px;
+    text-decoration: underline;
+  }
+/* ---------- STYLE FOR GRID EDITOR ---------- */
+
+.grid-section .img-fluid img {
+    max-width: 100%;
+    height: auto;
+}

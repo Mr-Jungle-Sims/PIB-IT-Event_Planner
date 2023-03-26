@@ -1,0 +1,58 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Layout.cshtml";
+}
+
+
+		<!-- Jumbotron, w title -->
+		<div class="jumbotron text-center jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-1">@Model.Value("pageTitle")</h1>
+				<p>Find out who's behind the CMS.</p>
+			</div>
+		</div>
+
+		<!-- Main container -->
+
+        <div class="container">
+			<div class="row section">
+
+
+				<!-- Contact details -->
+				<div class="col-md-6 details">
+				    <h3>Nehmen Sie Kontakt mit uns auf!</h3>
+					<p>Sie können sich jederzeit mit der Blumenfee in Verbindung setzen, indem Sie uns anrufen oder uns eine E-Mail schicken. <br /> Besichtigungs- Beratungstermine nur nach Absprache.<br />
+						<br />
+						Kostenvoranschlag erst nach Beratungstermin.</p>
+
+					<p>
+						Auguststraße 40<br />
+						D-66450 Bexbach<br />
+						Deutschland</p>
+					<p><span class="font-weight-bold">Nummer:</span> +49 1715 705 305</p>
+					<p><span class="font-weight-bold">Email:</span> <a href="mailto:info@die-blumenfee.de">info@die-blumenfee.de</a></p>
+				</div>
+				
+				<!-- The Contact form -->
+				<div class="col-md-6">
+					<div class="contact-form">
+						<div class="form-group">
+							<label>Name</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Nachricht</label>
+							<textarea class="form-control" rows="7"></textarea>
+						</div>
+						<input type="submit" class="btn btn-primary" value="Absenden">
+					</div>
+				</div>
+			</div>
+		</div>
+		
