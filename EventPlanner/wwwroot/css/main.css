@@ -205,6 +205,12 @@ p a:hover, p a:focus {
     width: 80%;
     height: 40%;
     position: absolute;
+    text-align: center;
+}
+
+.jumbotron-map iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .col-md-6.details{
