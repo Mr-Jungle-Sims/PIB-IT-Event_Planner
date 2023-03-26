@@ -189,6 +189,24 @@ p a:hover, p a:focus {
 
 /* ---------- ContactPage ---------- */
 
+.wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 40%;
+}
+.jumbotron-map{
+    background-color: #fffcff;
+    border: 3px solid #261f26;
+    margin: auto;
+    color:#3544b1;
+    width: 80%;
+    height: 40%;
+    position: absolute;
+}
+
 .col-md-6.details{
     padding-right: 90px;
 }
