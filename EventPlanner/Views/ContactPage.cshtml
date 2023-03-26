@@ -5,7 +5,8 @@
 	Layout = "Layout.cshtml";
 }
 
-
+    <div class="contact-layout">
+        
 		<!-- Jumbotron, w title -->
 		<div class="wrapper">
 		<div class="jumbotron-map ">
@@ -15,33 +16,29 @@
 
 		<!-- Main container -->
 
-        <div class="container">
-			<div class="row section">
+        <div class="contact-container">
+            	<!-- Contact details -->
+		<div class="contact-details">
+			<h3>Nehmen Sie Kontakt mit uns auf!</h3>
+			<p>Sie können sich jederzeit mit der Blumenfee in Verbindung setzen, indem Sie uns anrufen oder uns eine E-Mail schicken. <br /> 
+				<br /> 
+				<strong>Besichtigungs- Beratungstermine nur nach Absprache.</strong>
+				<br />
+				<strong>Kostenvoranschlag erst nach Beratungstermin.</strong></p>
 
-
-				<!-- Contact details -->
-				<div class="col-md-6 details">
-				    <h3>Nehmen Sie Kontakt mit uns auf!</h3>
-					<p>Sie können sich jederzeit mit der Blumenfee in Verbindung setzen, indem Sie uns anrufen oder uns eine E-Mail schicken. <br /> 
-					    <br /> 
-					    <strong>Besichtigungs- Beratungstermine nur nach Absprache.</strong>
-						<br />
-						<strong>Kostenvoranschlag erst nach Beratungstermin.</strong></p>
-
-					<p>
-						Auguststraße 40<br />
-						D-66450 Bexbach<br />
-						Deutschland</p>
-					<p><span class="font-weight-bold">Nummer:</span> +49 1715 705 305</p>
-					<p><span class="font-weight-bold">Email:</span> <a href="mailto:info@die-blumenfee.de">info@die-blumenfee.de</a></p>
-				</div>
-				
-				<!-- The Contact form -->
-				<div class="col-md-6">
+			<p>
+				Auguststraße 40<br />
+				D-66450 Bexbach<br />
+				Deutschland</p>
+			<p><span class="font-weight-bold">Nummer:</span> +49 1715 705 305</p>
+			<p><span class="font-weight-bold">Email:</span> <a href="mailto:info@die-blumenfee.de">info@die-blumenfee.de</a></p>
+		</div>
+		
+			<div class="contact-section">
 					
 			        @Model.Value("bodyText")
-			        
-				</div>
+				
 			</div>
 		</div>
+    </div>
 		
