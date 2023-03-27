@@ -132,27 +132,54 @@ p {
 
 /* ---------- MAIN CONTAINER ---------- */
 
-p a {
+.pink-color {
     color: #c14abe;
 }
 
+.col-text {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
 .more-info{
-    color: #212529;
+    color: #c14abe;
     text-decoration: underline;
+}
+
+.container-service{
+    width: 80%;
+}
+
+.container-services{
+    margin-top: 3%;
+    padding: auto 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 p a:hover, p a:focus {
     color: #c14abe;
 }
 
-.grey-bg {
+.light-pink-bg {
     background-color:#f3e5f3;
 }
 
-.orange-bg {
-    background-color: rgba(247, 156, 55, .8);
-    color: white;
+.pink-blue-bg {
+    background-color:#fffcff;
 }
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
 
 /* ---------- BLOG on Homepage ---------- */
 
@@ -166,18 +193,14 @@ p a:hover, p a:focus {
 }
 
 .box-blog {
-    padding-top: 50px;
-    height:500px;
+    padding-top: 30px;
+    height:50%;
 }
 
 .box-blog .blog-meta {
     font-style: italic;
     color: rgba(0, 0, 0, .7);
     font-size: 13px;
-}
-
-.blog-box-btn {
-    margin-bottom:10px;
 }
 
 @media (max-width: 992px) {
@@ -210,7 +233,6 @@ p a:hover, p a:focus {
     background-color: #fffcff;
     border: 3px solid #261f26;
     margin: auto;
-    color:#3544b1;
     width: 80%;
     height: 40%;
     position: absolute;
@@ -393,6 +415,11 @@ div.teammember {
     background-color: #261f26;
     color: #fffcff;
     width: 100%;
+}
+
+.block-text{
+	text-align: justify;
+	text-align-last: left;
 }
 
 .footer-section{
