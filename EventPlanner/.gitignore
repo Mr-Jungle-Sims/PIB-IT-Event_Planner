@@ -477,3 +477,6 @@ appsettings-schema.*.json
 
 # Media files
 /wwwroot/media/
+
+# recaptcha
+privateKey = "6LdohjMlAAAAABxN-HMRm3zJBafZyc8AlH0sdbzM"
