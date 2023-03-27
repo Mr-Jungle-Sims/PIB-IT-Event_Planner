@@ -12,7 +12,6 @@
 		<div class="jumbotron text-center jumbotron-fluid">
 			<div class="container">
 				<h1 class="display-1">@Model.Value("pageTitle")</h1>
-				<p>And this is <span class="font-weight-bold">only</span> the beginning.</p>
 			</div>
 		</div>
 
@@ -30,15 +29,11 @@
 
 		</div>
 		
+		@Model.Value("carousel")
+		
 		<div class="galerie-container">
-
-			<div class="galerie-section">
-				<div class="gelerie-slider">
-
-					@Model.Value("carousel")
-
-				</div>				
-			</div>
+		    
+		   
 
 		</div>
 
@@ -46,16 +41,53 @@
 		<div class="container-fluid grey-bg">
 			<div class="container">
 				<div class="row section">
-					<div class="col-md-8">
-						<h2>A flexible CMS - do things your way</h2>
-						<p>The Umbraco source code is free and available for download either as a ZIP file or via NuGet under the MIT license, so you can <a href="#">start crafting websites in Umbraco today</a>. 
-						Need to build a site with multiple 3rd party extensions and customized add-ons? No problem. Need to build a simple site with a straightforward contact form? No problem.</p>
-						<p>Whatever type or scale of your project, Umbraco will be able to handle it - and the cherry on top; with Umbraco’s well-known editor friendly UI, 
-							no matter how complex a site you’re building, you know that your editors will still find it a breeze to edit. Oh, and the cherry on top of the cherry - 
-							there's <span class="font-weight-bold">no need for you to spend time learning a new coding or templating language as Umbraco is based on C#, javaScript and Razor</span>. </p>
+					<div class="col-md-6">
+						<h3>Unser Beruf: Ein breites Spektrum an Dekorationsdienstleistungen für eine persönliche und maßgeschneiderte Veranstaltung</h3>
+						<p>Mit 10 Jahren Erfahrung ist Blumenfee im Saarland zu Hause und begleitet Brautpaare bei der Dekoration ihrer Hochzeit, dem Ereignis ihres Lebens...<br /><br />
+
+Die Event-Dekoration mit einem großen D!<br /><br />
+
+Zunächst geht es darum, Sie zu beraten und die Dekoration Ihrer Hochzeit an den Ort, den Rhythmus der Hochzeit und natürlich an das Budget anzupassen.<br /><br />
+
+Im Laufe der Jahre haben wir uns dafür entschieden, verschiedene Leistungen zu integrieren, damit unsere Kunden von A bis Z von einem einzigen Anbieter betreut werden. Blumendesign (Brautstrauß, Armbänder, Kränze, Autodekoration), Dekoration der Zeremonie in einem Gotteshaus oder der laizistischen Zeremonie, Tisch- und Buffetdekoration, Möbel und Loungebereiche, Fotobereiche oder Photocall und maßgeschneiderte Kreation aller großen Hochzeitsklassiker (Tischplan, Urne, Gästebuch, Richtungsschilder...). Zu einer Hochzeit gehört auch das Familientreffen am nächsten Tag, das oft in Form eines Brunchs stattfindet.
+<br /><br />
+Wir haben auch Angebote, um Sie am großen Tag zu begleiten, mit einem Angebot für Koordination und Wedding planning. Wir führen Sie durch den Ort, den Sie als "Wedding-Destination" wählen.
+<br /><br />
+Wir kümmern uns um alles, was Ihnen das Leben leichter macht! <br /><br /><a class="more-info" href="/leistungen">WEITERE INFOS</a></p>
+
+			
 					</div>
-					<div class="col-md-4">
+					<div class="row col-md-6">
 						<img src="/images/community.png" class="img-fluid" alt="Community illustration">
+						<img src="/images/community.png" class="img-fluid" alt="Community illustration">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<div class="container-fluid">
+			<div class="container">
+				<div class="row section">
+					<div class="row col-md-6">
+						<img src="/images/26.jpg" class="img-fluid" alt="Community illustration">
+					</div>
+					<div class="col-md-6">
+						<h3>Das Blumenfee-Team</h3>
+						<p>Ein starkes Team im Dienste Ihrer Hochzeit!<br /><br />
+
+Die Event-Dekoration mit einem großen D!<br /><br />
+
+Die Blumenfee entwirft mit Ihnen und für Sie ein Projekt, einen roten Faden, eine Geschichte, die sich nach und nach entwickelt.<br />
+
+Sie kümmert sich um die Planung der Location und den finanziellen Teil mit der Erstellung eines individuellen Kostenvoranschlags. Im Laufe des Jahres werden mehrere Termine am Ort des Empfangs und anschließend in der Agentur in Blumenfee organisiert. 
+<br /><br />
+Die Blumenfee begleitet Sie auch bei der Organisation Ihrer Hochzeit und bietet Ihnen Dienstleistungen im Bereich der Veranstaltungsdekoration an.
+<br />
+Anschließend fährt sie mit dem künstlerischen und kreativen Ansatz fort. Von A bis Z ist dieser Prozess maßgeschneidert und zu 100 % personalisiert, und am Tag X ist Ihre Hochzeit ein Ereignis, das Ihnen ähnelt, an den Veranstaltungsort angepasst ist und außergewöhnliche Erinnerungen hinterlässt!
+<br /><br />
+Wir freuen uns darauf, mit Ihnen zusammenzuarbeiten und Ihr Dekorationsprojekt zu gestalten!</p>
+
+			
 					</div>
 				</div>
 			</div>
@@ -66,7 +98,7 @@
 
 			<div class="row section">
 				<div class="col-md-12">
-					<h1>Latest from the blog</h1>
+					<h3>Das Blumenfee-Team</h3>
 				</div>
 
 				<!-- Blog Post query goes here. -->
@@ -78,7 +110,6 @@
 						<p>The end of 2019 is approaching and with this, also the last Product Update of the year. 
 							Let’s have a look at what we’ve been working on and what you can expect in the near future.</p>
 					</div>
-					<a href="Blogpost.html" class="btn btn-inverted">Read more >></a>
 				</div>
 				<div class="col-md-4">
 					<div class="box-blog">
@@ -118,5 +149,3 @@
 	
 			</div>
 		</div>
-
-		

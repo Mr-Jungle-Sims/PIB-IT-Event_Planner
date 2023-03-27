@@ -1,0 +1,80 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Impressum>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Layout.cshtml";
+}
+
+<!DOCTYPE HTML>
+
+		<div class="impressium">
+		    <!-- Jumbotron, w title -->
+		<div class="jumbotron text-center jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-1">@Model.Value("pageTitle")</h1>
+			</div>
+		</div>
+
+		<!-- Main container -->
+
+		<!-- Blogpost content -->
+        <div class="container">
+
+			<div class="row section">
+				<div class="col-md-12">
+				    <h3>Verantwortlich für die Inhalte</h3>
+					<ul class="footer-links">
+<li><span>Jana Theobald</span></li>
+<li><span>Albert-Schweitzer-Weg 2</span></li>
+<li><span>D-66450 Bexbach</span></li>
+<li><span>Telefon: <strong>06826 - 524 622</strong></span></li>
+<li><span>Fax: <strong>06826 - 4485</strong></span></li>
+<li><span>Email: <strong><a class="email-impressum" style="color:black" href="mailto:info@die-blumenfee.de">info@die-blumenfee.de</a></strong></span></li>
+</ul>
+					<br />
+					<h3>Inhalt des Online-Angebots</h3>
+					<p>
+						BLUMENFEE ist stets bemüht, qualitativ hochwertige Informationen zur Verfügung zu stellen. Dennoch übernehmen wir keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit, Qualität oder Verfügbarkeit der bereitgestellten Informationen.
+						<br /><br />
+						Haftungsansprüche gegen die Betreiber der Website, die sich auf Schäden materieller oder ideeller Art beziehen, welche durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden sind grundsätzlich ausgeschlossen, sofern seitens der Betreiber kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich.
+						<br /><br />
+						Wir behalten es uns ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</p>
+					<br />
+					<h3>Verweise & Links</h3>
+					<p>
+						Sofern auf Verweisziele direkt oder indirekt durch Links verwiesen wird, die außerhalb des Verantwortungsbereichs der Betreiber liegen, haftet dieser nur dann, wenn er von den Inhalten Kenntnis hatte und es technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.
+                        <br /><br />
+						Wir erklären hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss.
+						<br /><br />
+						Für darüber hinausgehende Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter dieser Seiten, nicht derjenige, der über Links auf die jeweilige Veröffentlichung verweist. Diese Einschränkung gilt gleichermaßen auch für Fremdeinträge in Gästebüchern und Foren.
+						<br /><br />
+						Wir verwenden Links nur, um unseren Besuchern die Möglichkeit zu geben, sich weitere Informationen zu beschaffen. Ein Link bedeutet jedoch nicht, dass wir die entsprechenden fremden Seiten empfehlen oder dass wir uns die Inhalte zu eigen machen.<br />Rechtswirksamkeit des Haftungsausschlusses.
+						<br /><br />
+						Dieser Haftungsausschluss ist Teil unseres Internetangebots, von dem auf diesen verwiesen wurde. Falls Teile oder Formulierungen des Texts nicht, nicht mehr oder nicht vollständig der geltenden Rechtslage entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.</p>
+					<br />
+					<h3>Publikationen</h3>
+					<p>Sollte jemand gegen die Veröffentlichung diverser Publikationen auf unserer Website Einwände haben, werden diese geprüft und gegebenfalls Ihrem Wunsch entsprechend entfernt !</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Related story -->
+		<div class="footer-impressum-container">
+		    
+			<div class="footer-impressum">
+						<div class="footer-copyright">
+                <div class="footer-copyright-left">
+                    <p class="copyright">&copy; 2023 Blumenfee</p>
+                    <a class="impressum" href="#">Impressum</a>
+                </div>
+                <div class="footer-copyright-right">
+                    <p class="copyright">Made with <span style="color:red;">&hearts;</span> in</p>
+                    <a class="location" href="https://www.saarbruecken.de/" target="_blank">Saarbrücken</a>
+                </div>
+            </div>
+				
+			</div>
+		</div>
+		</div>
+		
+		

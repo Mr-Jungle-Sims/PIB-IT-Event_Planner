@@ -68,9 +68,9 @@ p {
 /* ---------- JUMBOTRON ---------- */
 
 .jumbotron {
-    background-color:rgba(16, 31, 60, 1);
+    background-color:#261f26;
     margin-bottom: 0;
-    color:white;
+    color:#fffcff;
 }
 
 /* ---------- NAVBAR ---------- */
@@ -136,12 +136,17 @@ p a {
     color: #c14abe;
 }
 
+.more-info{
+    color: #212529;
+    text-decoration: underline;
+}
+
 p a:hover, p a:focus {
     color: #c14abe;
 }
 
 .grey-bg {
-    background-color:#F9F7F4;
+    background-color:#f3e5f3;
 }
 
 .orange-bg {
@@ -227,7 +232,6 @@ p a:hover, p a:focus {
 
 .contact-section{
     width: 70%;
-    margin-top: 3%;
     align-items: center;
     justify-content: center;
     margin-bottom: 3%;
@@ -355,6 +359,25 @@ a.featured-link:hover .thumbnail-blog .thumbnail-img {
     color:black;
     text-decoration: none;
 }
+
+/* ---------- IMPRESSUM ---------- */
+
+.impressium{
+    background-color: #fffcff;
+}
+
+.footer-impressum-container{
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-impressum {
+    color: #fffcff;
+    width: 80%;
+    margin-bottom: 1%;
+}
+
 
 /* ---------- CONTENTPAGE 2 ---------- */
 
