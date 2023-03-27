@@ -183,7 +183,7 @@ p a:hover, p a:focus {
     background-position: center;
   }
 
-  .img-fluid {
+  .img-fluid-top {
     max-width: 100%;
     height: auto;
     opacity: 0;
@@ -518,7 +518,7 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
   }
 /* ---------- STYLE FOR GRID EDITOR ---------- */
 
-.grid-section {
+.grid-section .img-fluid img {
     max-width: 100%;
     height: auto;
 }
