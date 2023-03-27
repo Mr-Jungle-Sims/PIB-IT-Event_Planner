@@ -172,13 +172,43 @@ p a:hover, p a:focus {
 
 .grid-container {
     display: grid;
-    grid-auto-flow: dense;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
   }
   
   .grid-item {
     text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+  .overlay, .overlay-1, .overlay-2  {
+    position: absolute;
+    text-align: center;
+    color: #fffcff;
+    font-size: larger;
+    font-family: 'Forte', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .overlay:hover {
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0.0);
   }
 
 /* ---------- BLOG on Homepage ---------- */
@@ -488,7 +518,7 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
   }
 /* ---------- STYLE FOR GRID EDITOR ---------- */
 
-.grid-section .img-fluid img {
+.grid-section {
     max-width: 100%;
     height: auto;
 }
