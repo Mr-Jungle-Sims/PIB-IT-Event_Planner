@@ -1,0 +1,47 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.DSgvo>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Layout.cshtml";
+}
+
+<!DOCTYPE HTML>
+
+		<div class="impressium">
+		    <!-- Jumbotron, w title -->
+		<div class="jumbotron text-center jumbotron-fluid">
+			<div class="container">
+				<h3 >@Model.Value("pageTitle")</h3>
+				<h1 >DSGVO</h1>
+				
+			</div>
+		</div>
+
+		
+        <div class="container">
+
+			<div class="row section">
+				<div class="col-md-12">
+				    <h3>Verantwortlich für die Inhalte</h3>
+					</div>
+			</div>
+		</div>
+
+		
+		<div class="footer-impressum-container">
+		    
+			<div class="footer-impressum">
+						<div class="footer-copyright">
+                <div class="footer-copyright-left">
+                    <p class="copyright">&copy; 2023 Blumenfee</p>
+                    <a class="impressum" href="#">Impressum</a>
+                </div>
+                <div class="footer-copyright-right">
+                    <p class="copyright">Made with <span style="color:red;">&hearts;</span> in</p>
+                    <a class="location" href="https://www.saarbruecken.de/" target="_blank">Saarbrücken</a>
+                </div>
+            </div>
+				
+			</div>
+		</div>
+		</div>

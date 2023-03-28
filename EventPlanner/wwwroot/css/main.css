@@ -73,6 +73,12 @@ p {
     color:#fffcff;
 }
 
+.jumbotron-clear {
+    background-color:#fffcff;
+    margin-bottom: 0;
+    color:#fffcff;
+}
+
 /* ---------- NAVBAR ---------- */
 .nav-container{
     background-color: #fffcff;
@@ -151,7 +157,6 @@ p {
 }
 
 .container-services{
-    margin-top: 3%;
     padding: auto 5%;
     align-items: center;
     display: flex;
