@@ -42,19 +42,6 @@ p {
     color: white;
 }
 
-.btn-inverted-orange {
-    background-color: white;
-    border: 2px solid rgba(247, 156, 55, 1);
-    padding: .7rem 1.5rem;
-    color: rgba(247, 156, 55, 1);
-    font-weight: bolder;
-}
-
-.btn-inverted-orange:hover, .btn-inverted-orange:focus {
-    background-color: rgba(247, 156, 55, 1);
-    color: white;
-}
-
 /* ---------- Structure ---------- */
 
 .section {
@@ -232,15 +219,10 @@ p a:hover, p a:focus {
     height:50%;
 }
 
-.box-blog .blog-meta {
-    font-style: italic;
-    color: rgba(0, 0, 0, .7);
-    font-size: 13px;
-}
 
 @media (max-width: 992px) {
     .box-blog {
-        height:600px;
+        height:500px;
     }
 }
 
@@ -330,91 +312,112 @@ p a:hover, p a:focus {
     color: #c14abe;
     text-decoration: none;
 }
-/* ---------- BLOG ---------- */
 
-a.featured-link {
-    color: #212529
+.container-form{
+    max-width:1280px;
+    margin:0 auto;
+    padding-left:32px;
+    padding-right:32px
 }
-
-a.featured-link:hover, a.featured-link:focus {
-    text-decoration: none;
+@media (min-width: 768px){
+    .container-form{
+        padding-left:64px;
+        padding-right:64px
+    }
 }
-
-.featured-blog .image-box {
+@media (min-width: 1024px){
+    .container-form{
+        padding-left:128px;
+        padding-right:128px
+    }
+}
+.container-form h1{
+    color:#666;
+    font-size:36px;
+    text-transform:uppercase;
+    text-align:center;
+    margin-bottom:16px
+}
+.container-form p{
+    color:#888;
+    font-size:18px;
+    line-height:1.5;
+    margin-bottom:32px
+}
+.container-form form{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns:1fr;
+    grid-template-columns:1fr;
+    grid-gap:16px;
+    background-color:#FFF;
+    padding:32px;
+    border-radius:16px;
+    -webkit-box-shadow:0px 6px 12px rgba(0,0,0,0.2);
+    box-shadow:0px 6px 12px rgba(0,0,0,0.2)
+}
+@media (min-width: 768px){
+    .container-form form{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+.container-form form .form-group.full{
+    grid-column:1 / -1
+}
+.container-form form .form-group label{
+    display:block;
+    margin-bottom:5px;
+    color:#333;
+    font-size:17px
+}
+.container-form form .form-group span{
+    color:#c14abe;
+    font-size:17px
+}
+.container-form form .form-group .form-element{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    outline:none;
+    border:none;
+    display:block;
     width:100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    margin-bottom:20px;
-    border-radius: 3px; 
+    border-radius:8px;
+    padding:12px 16px;
+    background-color:#F3F3F3;
+    -webkit-transition:0.4s;
+    transition:0.4s
 }
-
-.thumbnail-blog {
-    padding-bottom: 5px;
-    border-bottom: rgba(53, 68, 177, 1) solid 2px;
-    margin-bottom: 35px;
-    transition: ease .5s;
+.container-form form .form-group .form-element:focus{
+    -webkit-box-shadow:0px 0px 6px rgba(0,0,0,0.2);
+    box-shadow:0px 0px 6px rgba(0,0,0,0.2);
+    background-color:#FFF
 }
-
-.thumbnail-blog h5 {
-    font-weight: 700;
+.container-form form .form-group textarea{
+    resize:none;
+    min-height:100px
 }
-
-.thumbnail-blog .thumbnail-img {
-    width: 100%;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    transition: ease .5s;
+.container-form form .submit-group{
+    grid-column:1 / -1;
+    text-align:right
 }
-
-a.featured-link:hover .thumbnail-blog {
-    border-bottom: #f79c37 solid 2px;
+.container-form form .submit-group input[type="submit"]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    border:none;
+    outline:none;
+    background:none;
+    padding:12px 16px;
+    background-color:#FF9FDB;
+    border-radius:8px;
+    color:#FFF;
+    cursor:pointer;
+    -webkit-transition:0.4s;
+    transition:0.4s
 }
-
-a.featured-link:hover .thumbnail-blog .thumbnail-img {
-    opacity: .6;
-}
-
-/* ---------- BLOGPOST ---------- */
-
-.intro {
-    font-size: 125%;
-    color: rgba(16, 31, 60, 1);
-    margin-bottom: 30px;
-    border-bottom:  #f79c37 solid 2px;
-}
-
-.meta-author.p-3 {
-    padding: 0 !important;
-}
-
-.meta-meta a {
-    color:#3544b1;
-}
-
-.meta-meta a:hover, .meta-meta a:focus {
-    color: rgba(53, 68, 177, 0.8);
-    text-decoration: none;
-}
-
-.blog-related {
-    color:rgba(16, 31, 60, 1);
-}
-
-.blog-related h4 {
-    text-decoration: underline;
-}
-
-.blog-related a {
-    color:rgba(16, 31, 60, 1);
-}
-
-.blog-related a:hover, .blog-related a:focus {
-    color:black;
-    text-decoration: none;
+.container-form form .submit-group input[type="submit"]:hover{
+    background-color:#9B75D7
 }
 
 /* ---------- IMPRESSUM ---------- */
@@ -433,15 +436,8 @@ a.featured-link:hover .thumbnail-blog .thumbnail-img {
     color: #fffcff;
     width: 80%;
     margin-bottom: 1%;
-}
-
-
-/* ---------- CONTENTPAGE 2 ---------- */
-
-div.teammember {
-    line-height: 32px;
-    font-size: 15px;
-    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 /* ---------- FOOTER ---------- */
@@ -526,4 +522,315 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
 .grid-section .img-fluid img {
     max-width: 100%;
     height: auto;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+
+@media only screen and (max-width: 950px){
+
+    .navbar-brand {
+        font-size: 58px;
+    }
+
+    .col-md-6 h3{
+        word-wrap: break-word;
+        font-size: 25px;
+    }
+
+    .box-blog p{
+        text-align: left;
+        text-align-last: left;
+    }
+
+    .jumbotron-clear h1 {
+        font-size: 32px;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(1, auto);
+    }
+  
+
+}
+
+@media only screen and (max-width: 750px){
+    .navbar{
+        width: 100%;
+    }
+
+    .jumbotron-clear{
+        margin-bottom: -18px;
+        margin-top: 3px;
+    }
+
+    .jumbotron-clear h1, .col-md-6 h3 {
+        font-size: 18px;
+    }
+
+    .col-md-6 h3, 
+    .col-md-12 h3, 
+    .contact-details h3{
+        font-size: 17px;
+    }
+
+    .col-md-12 h3 {
+        margin-top: -60px;
+    }
+
+    .col-md-6 .about {
+        margin-top: 40px;
+    }
+
+    .jumbotron-clear h5, 
+    .grid-container div,
+    .col-md-6 p{
+        font-size: 13px;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 13px;
+        margin: 0 5px;
+    }
+
+    .box-blog{
+        max-height: 380px;
+        margin-top: -45px;
+    }
+
+    .col-md-4 h5, .impressium h3{
+        font-size: 14px;
+    }
+
+    .col-md-4 p, 
+    .contact-details p,
+    .impressium p{
+        font-size: 12px;
+    }
+
+    .contact-details{
+        margin-top: 30px;
+    }
+
+    .impressium h3{
+        margin-top: 0;
+    }
+    
+    .impressium h1{
+        font-size: 20px;
+    }
+
+    .footer-impressum-container .footer-impressum{
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    .footer-copyright, 
+    .impressum, .location, 
+    .impressum:hover, 
+    .location:hover{
+        font-size: 11px;
+    }
+
+    .footer-links{
+        font-size: 13px;
+    }
+
+    .footer h5 {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .footer .col-md-4, .footer-copyright{
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 380px){
+
+    .navbar-brand {
+        font-size: 28px;
+    }
+
+    .jumbotron-clear h1, .col-md-6 h3 {
+        font-size: 16px;
+    }
+
+    .col-md-6 h3, 
+    .col-md-12 h3, 
+    .contact-details h3{
+        font-size: 15px;
+    }
+
+    .col-md-12 h3 {
+        margin-top: -60px;
+    }
+
+    .col-md-6 .about {
+        margin-top: 40px;
+    }
+
+    .jumbotron-clear h5, 
+    .grid-container div,
+    .col-md-6 p{
+        font-size: 11px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 11px;
+        margin: 0 5px;
+    }
+
+    .box-blog{
+        max-height: 380px;
+        margin-top: -45px;
+    }
+
+    .col-md-4 h5, .impressium h3{
+        font-size: 13px;
+    }
+
+    .col-md-4 p, 
+    .contact-details p,
+    .impressium p{
+        font-size: 11px;
+    }
+
+    .contact-details{
+        margin-top: 30px;
+    }
+
+    .impressium h3{
+        margin-top: 0;
+    }
+    
+    .impressium h1{
+        font-size: 20px;
+    }
+
+    .footer-impressum-container .footer-impressum{
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    .footer-copyright, 
+    .impressum, .location, 
+    .impressum:hover, 
+    .location:hover{
+        font-size: 10px;
+    }
+
+    .footer-links{
+        font-size: 11px;
+    }
+
+    .footer h5 {
+        font-size: 13px;
+        margin-top: 25px;
+    }
+
+    .footer .col-md-4, .footer-copyright{
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+  
+
+}
+
+@media only screen and (max-width: 350px){
+
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .jumbotron-clear h1, .col-md-6 h3 {
+        font-size: 15px;
+    }
+
+    .col-md-6 h3, 
+    .col-md-12 h3, 
+    .contact-details h3{
+        font-size: 14px;
+    }
+
+    .col-md-12 h3 {
+        margin-top: -60px;
+    }
+
+    .col-md-6 .about {
+        margin-top: 40px;
+    }
+
+    .jumbotron-clear h5, 
+    .grid-container div,
+    .col-md-6 p{
+        font-size: 10px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 11px;
+        margin: 0 5px;
+    }
+
+    .box-blog{
+        max-height: 380px;
+        margin-top: -45px;
+    }
+
+    .col-md-4 h5, .impressium h3{
+        font-size: 12px;
+    }
+
+    .col-md-4 p, 
+    .contact-details p,
+    .impressium p{
+        font-size: 10px;
+    }
+
+    .contact-details{
+        margin-top: 30px;
+    }
+
+    .impressium h3{
+        margin-top: 0;
+    }
+    
+    .impressium h1{
+        font-size: 18px;
+    }
+
+    .footer-impressum-container .footer-impressum{
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    .footer-copyright, 
+    .impressum, .location, 
+    .impressum:hover, 
+    .location:hover{
+        font-size: 9px;
+    }
+
+    .footer-links{
+        font-size: 10px;
+    }
+
+    .footer h5 {
+        font-size: 12px;
+        margin-top: 25px;
+    }
+
+    .footer .col-md-4, .footer-copyright{
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+  
+
 }
