@@ -314,12 +314,6 @@ p a:hover, p a:focus {
     padding-left:32px;
     padding-right:32px
 }
-.container-form p{
-    color:#888;
-    font-size:18px;
-    line-height:1.5;
-    margin-bottom:32px
-}
 .container-form form{
     display:-ms-grid;
     display:grid;
@@ -434,6 +428,15 @@ p a:hover, p a:focus {
 
 .impressium{
     background-color: #fffcff;
+}
+
+.impressium a{
+    color: #c14abe;
+}
+
+.impressium p, .impressium ul li{
+	text-align: justify;
+	text-align-last: left;
 }
 
 .footer-impressum-container{
@@ -631,7 +634,8 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
     .container-form form .form-group input[type="number"],
     .container-form form .form-group input[type="email"],
     .container-form form .form-group textarea,
-    .container-form form .form-group input[type="radio"]{
+    .container-form form .form-group input[type="radio"],
+    .impressium  ul li{
         font-size: 12px;
     }
 
@@ -667,7 +671,9 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
         margin-top: 0;
     }
     
-    .impressium h1{
+    .impressium h1, 
+    .impressium  h2, 
+    .impressium  h4{
         font-size: 20px;
     }
 
@@ -757,7 +763,9 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
         margin-top: 0;
     }
     
-    .impressium h1{
+    .impressium h1,
+    .impressium  h2, 
+    .impressium  h4{
         font-size: 20px;
     }
 
@@ -854,7 +862,8 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
     .container-form form .form-group input[type="number"],
     .container-form form .form-group input[type="email"],
     .container-form form .form-group textarea,
-    .container-form form .form-group input[type="radio"]{
+    .container-form form .form-group input[type="radio"],
+    .impressium  ul li{
         font-size: 9px;
     }
 
@@ -890,7 +899,9 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
         margin-top: 0;
     }
     
-    .impressium h1{
+    .impressium h1, 
+    .impressium  h2, 
+    .impressium  h4{
         font-size: 18px;
     }
 
